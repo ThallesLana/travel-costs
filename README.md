@@ -1,4 +1,4 @@
-# 🚗💨 Travel Costs 🚗💨
+# 🚗💨 Travel Costs
 
 ## Desbrave o Mundo com o Travel Costs
 
@@ -28,7 +28,7 @@ Baixe agora o Travel Costs e simplifique suas viagens. Estamos aqui para tornar 
 ### 👨🏻‍💻 Linguagens:
 [![Kotlin Badge](https://img.shields.io/badge/Kotlin-6633cc?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 ### 💻 Versionamento:
-[![Git Badge](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
+[![Git Badge](https://img.shields.io/badge/Git-6633cc?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
 ### ⚒ Ferramentas & IDE:
 [![Android Studio Badge](https://img.shields.io/badge/Android_Studio-6633cc?style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio?hl=pt-br)
 
