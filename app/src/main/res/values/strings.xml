@@ -9,4 +9,11 @@
     <string name="total_costs">SEU GASTO TOTAL SERÁ DE:</string>
     <string name="calc">CALCULAR</string>
     <string name="cost">R$ 0</string>
+
+    <string name="success">Calculo Feito com Sucesso!</string>
+    <string name="validate_distance">O campo distância é obrigatório</string>
+    <string name="validate_price">O campo preço por litro é obrigatório</string>
+    <string name="validate_autonomy">O campo kms por litro é obrigatório e não pode ser 0</string>
+
+
 </resources>
