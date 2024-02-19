@@ -1,41 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgView"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:src="@drawable/ic_travel_mode"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
+        android:id="@+id/titleImgView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:layout_gravity="center"
         android:textSize="48sp"
         android:textColor="@color/green"
+        android:layout_below="@+id/imgView"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         />
+
     <EditText
         android:id="@+id/edit_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/titleImgView"
         android:hint="@string/distance"
+        android:layout_marginTop="20dp"
         android:inputType="numberDecimal" />
 
     <TextView
+        android:id="@+id/label_distance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/total_km" />
+        android:text="@string/total_km"
+        android:layout_below="@id/edit_distance"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/edit_price"
@@ -43,13 +52,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/price"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/label_distance"/>
 
     <TextView
+        android:id="@+id/label_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/price_gas" />
+        android:text="@string/price_gas"
+        android:layout_below="@+id/edit_price"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/edit_autonomy"
@@ -57,49 +70,61 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/autonomy"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/label_price"/>
 
     <TextView
+        android:id="@+id/label_autonomy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/kms_per_l" />
+        android:text="@string/kms_per_l"
+        android:layout_below="@+id/edit_autonomy"
+        android:layout_centerHorizontal="true"
+        />
 
     <TextView
+        android:id="@+id/label_costs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="@string/total_costs"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label_autonomy"/>
 
     <TextView
         android:id="@+id/view_cost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="@string/cost"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:layout_below="@+id/label_costs"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/button_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/green"
         android:padding="16dp"
         android:text="@string/calc"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_below="@+id/view_cost"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
+        android:id="@+id/signature"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
         android:gravity="center"
+        android:layout_alignParentBottom="true"
         android:text="By Thalles Lana"
-        android:layout_marginTop="40dp"
         android:textSize="16sp"
         />
 
-</LinearLayout>
+</RelativeLayout>
