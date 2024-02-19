@@ -8,7 +8,6 @@ import com.thalleslana.travelcosts.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-
     // use lateinit para que a variavel só seja cobrada após o OnCreate da Activity
     private lateinit var binding: ActivityMainBinding;
 
@@ -24,6 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // evento de clique
         binding.buttonCalc.setOnClickListener(this)
 
+        binding.editPrice.addTextChangedListener(MoneyTextWatcher(binding.editPrice))
     }
 
     override fun onClick(view: View) {
