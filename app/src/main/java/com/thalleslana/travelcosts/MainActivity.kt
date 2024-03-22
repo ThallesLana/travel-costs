@@ -33,30 +33,30 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun validateDistance(): Boolean {
-        if(binding.editDistance.text.toString().isBlank()){
+        return if(binding.editDistance.text.toString().isBlank()){
             binding.editDistance.error = getString(R.string.validate_distance)
             Toast.makeText(applicationContext, R.string.validate_distance, Toast.LENGTH_SHORT).show()
-            return false
+            false
         } else {
-            return true
+            true
         }
     }
     private fun validatePrice(): Boolean {
-        if(binding.editPrice.text.toString().isBlank()){
+        return if(binding.editPrice.text.toString().isBlank()){
             binding.editPrice.error = getString(R.string.validate_price)
             Toast.makeText(applicationContext, R.string.validate_price, Toast.LENGTH_SHORT).show()
-            return false
+            false
         } else {
-            return true
+            true
         }
     }
     private fun validateAutonomy(): Boolean {
-        if(binding.editAutonomy.text.toString().isBlank() || binding.editAutonomy.text.toString().toFloat() == 0f){
+        return if(binding.editAutonomy.text.toString().isBlank() || binding.editAutonomy.text.toString().toFloat() == 0f){
             binding.editAutonomy.error = getString(R.string.validate_autonomy)
             Toast.makeText(applicationContext, R.string.validate_autonomy, Toast.LENGTH_SHORT).show()
-            return false
+            false
         } else {
-            return true
+            true
         }
     }
 
@@ -72,8 +72,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val total = (distance * price) / autonomy;
 
             // formatação de numero para decimal com 2 casas.
-            binding.viewCost.text = "R$ ${"%.2f".format(total)}";
-
+            binding.textCosts.text = "R$ ${"%.2f".format(total)}";
 
             // Toast Notify
             Toast.makeText(applicationContext, "Calculo Feito com Sucesso!", Toast.LENGTH_SHORT).show();

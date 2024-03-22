@@ -14,6 +14,8 @@
     <string name="validate_distance">O campo distância é obrigatório</string>
     <string name="validate_price">O campo preço por litro é obrigatório</string>
     <string name="validate_autonomy">O campo kms por litro é obrigatório e não pode ser 0</string>
+    <string name="footer_sign">Develop with ❤️ by Thalles Lana️</string>
+    <string name="description_logo">Logo Travel Costs</string>
 
 
 </resources>
